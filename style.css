@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* image */
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* image */
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: baseline;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 60vw;
+}
+
+.title, li {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    color: rosybrown;
+    transition: opacity 0.5s;
+}
+
+.title:hover {
+    opacity: 0.8;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+li:hover {
+    color: violet;
+}
+
+.search-image {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    right: 190px;
+    color: rgb(175, 169, 169);
+}
+
+input {
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition: opacity 0.5s;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:hover {
+    opacity: 0.8;
+}
+/* header */
+/* ______________________________________________________________________________________________ */
+
+/* container */
+.container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* container */
+/* ______________________________________________________________________________________________ */
+
+/* center content */
+.center-content {
+    padding: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.episode {
+    color: rgb(101, 156, 122);
+    font-family: 'Overpass', sans-serif;
+}
+
+.text {
+    box-sizing: border-box;
+    font-size: 22px;
+    width: 40vw;
+    color: rgb(206, 185, 206);
+    font-family: 'Vollkorn', serif;
+}
+
+.story {
+    color: rgb(214, 146, 119);
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.just-story-and-text {
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: rgba(49, 41, 41, 0.815);
+    padding: 20px;
+    border-radius: 20px;
+    transition: box-shadow 0.5s;
+    margin-top: 20px;   
+}
+
+.just-story-and-text:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+
+/* center content */
+/* ______________________________________________________________________________________________ */
+
+/* left content */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px 100px;
+    width: 25vw;
+}
+
+.watch {
+    margin-bottom: 20px;
+    width: 240px;
+    height: 150px;
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    background-color: rgb(136, 15, 15);
+    border-radius: 60px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+} 
+
+.watch>a {
+    text-decoration: none;
+    color: black;
+}
+
+.watch:hover {
+    background-color: rgba(197, 53, 53, 0.89);
+}
+
+.watch:active {
+    background-color: red;
+    border: none;
+}
+
+.download {
+    margin-bottom: 20px;
+    width: 240px;
+    height: 150px;
+    font-size: 20px;    
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    background-color: rgba(3, 97, 3, 0.76);
+    border-radius: 60px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+}
+
+.download:hover {
+    background-color: rgba(88, 226, 88, 0.76);
+}
+
+.download:active {
+    background-color: green;
+    border: none;
+}
+
+
+
+/* left content */
+/* ______________________________________________________________________________________________ */
+
+/* right content */
+.anime-image{
+    width: 30vw;
+    height: 80vh;
+    border: 2px solid rgba(175, 19, 19, 0.603);
+    margin-right: 20px;
+}
+
+.image-button{
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    cursor: pointer;
+    background-color: rgba(66, 95, 79, 0.404);
+    transition: all 0.5s;
+}
+
+.image-button:hover {
+    background-color: rgb(65, 90, 76)
+}
+
+.image-button>a {
+    color: rgb(218, 182, 180);    
+    text-decoration: none;
+    transition: color 0.5;
+}
+
+.image-button>a:hover {
+    color: rgb(236, 175, 84);
+}
+
+
+/* right content */
+.h3 {
+    width: 90%;
+    height: 60%;
+    font-size: 30px;
+    margin: 30px;
+    color: rgb(167, 154, 154);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 3px solid rgb(146, 53, 53);
+    padding-bottom: 10px;
+    
+}
+/* images */
+
+.image {
+    border-radius: 20px;
+    margin: 20px;
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+}
+
+.image:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.ep {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(152, 170, 230, 0.753);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: relative;
+    bottom: 390px;
+    left: -295px;
+    transition: background-color 0.5s;
+}
+
+.ep:hover {
+    background-color: lightblue;
+}
+
+button>a:hover {
+    color: rgb(15, 76, 94);
+}
+
+
+button>a {
+    text-decoration: none;
+    color: rgb(65, 52, 52);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: color 0.5s;
+}
+/* images */
+
+
+
+
+
+
